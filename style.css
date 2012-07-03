@@ -27,6 +27,36 @@ a:hover {
 }
 
 /* Content formatting */
+div#desc-header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+
+#header-image {
+	position: relative;
+	width: 1216px;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#header-image > img {
+	max-width: 100%;
+}
+
+a#header-link {
+	position: absolute;
+	right: 3px;
+	top: 6px;
+}
+
+div#goal, div#infobox {
+	margin-top: 400px;
+}
+
 div#current-work {
 	float: right;
 	width: 500px;
