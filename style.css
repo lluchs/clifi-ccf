@@ -27,6 +27,11 @@ a:hover {
 }
 
 /* Content formatting */
+div#current-work {
+	float: right;
+	width: 500px;
+}
+
 div#weapons {
 	width: 580px;
 }
