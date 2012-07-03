@@ -25,3 +25,13 @@ a:link {
 a:hover { 
   color: #7a5b3d; 
 }
+
+/* Content formatting */
+div#weapons {
+	width: 580px;
+}
+
+div#weapons img {
+	float: left;
+	padding-right: 5px;
+}
