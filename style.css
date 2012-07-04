@@ -3,6 +3,10 @@ div#content {
   max-width: 1280px;
 }
 
+div#Description {
+	position: relative;
+}
+
 div#floater {
   position:relative; 
   top:-138px; 
