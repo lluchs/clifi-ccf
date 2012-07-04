@@ -74,3 +74,10 @@ div#weapons img {
 	float: left;
 	padding-right: 5px;
 }
+
+/* Fix buttons for smaller screens */
+@media screen and (max-width: 1300px) {
+	div#buttons img {
+		width: 24.6%;
+	}
+}
