@@ -77,7 +77,33 @@ div#weapons img {
 
 /* Fix buttons for smaller screens */
 @media screen and (max-width: 1300px) {
-	div#buttons img {
-		width: 24.6%;
+	div#buttons {
+		position: relative;
 	}
+
+	div#buttons img {
+		width: 100%;
+	}
+
+	div #buttons > a {
+		position: absolute;
+		width: 24.7%;
+	}
+
+	div#buttons > a:nth-child(1) {
+		left: 0;
+	}
+
+	div#buttons > a:nth-child(2) {
+		left: 25.14%;
+	}
+
+	div#buttons > a:nth-child(3) {
+		left: 50.28%;
+	}
+
+	div#buttons > a:nth-child(4) {
+		right: 0;
+	}
+
 }
