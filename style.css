@@ -111,3 +111,8 @@ div#weapons img {
 	}
 
 }
+
+/* Don't allow adding new buttons without fixing the CSS above first */
+div#buttons > a:nth-child(n+6) {
+	display: none;
+}
