@@ -87,7 +87,7 @@ div#weapons img {
 
 	div #buttons > a {
 		position: absolute;
-		width: 24.7%;
+		width: 19.7%;
 	}
 
 	div#buttons > a:nth-child(1) {
@@ -95,14 +95,18 @@ div#weapons img {
 	}
 
 	div#buttons > a:nth-child(2) {
-		left: 25.14%;
+		left: 20.1%;
 	}
 
 	div#buttons > a:nth-child(3) {
-		left: 50.28%;
+		left: 40.2%;
 	}
 
 	div#buttons > a:nth-child(4) {
+		left: 60.3%;
+	}
+
+	div#buttons > a:nth-child(5) {
 		right: 0;
 	}
 
