@@ -79,7 +79,8 @@ a:hover {
       width: 160px
       height: 220px
       absolute: top 400px right 50px
-      color: #d5d5d5
+      z-index: 10
+      &, a { color: #d5d5d5 }
       text-shadow: -1px -1px 3px #292929, 1px 1px 3px #cecece
 
       dt {
@@ -108,7 +109,7 @@ a:hover {
       relative: left -17px top
     }
     > div {
-      absolute: left 190px top 100px
+      absolute: left 190px top 80px
       width: 670px
     }
   }
@@ -117,7 +118,9 @@ a:hover {
     padding = 20px
     margin = 20px
     box-width = 421px
+    box-height = 261px
     width: (box-width + margin * 2) * 2
+    height: box-height + 20px
     margin: 50px auto
     > div {
       position: relative
@@ -125,7 +128,7 @@ a:hover {
       margin: margin
       display: inline-block
       width: box-width - padding * 2
-      height: 261px
+      height: box-height
       text-align: left
       padding: 0 padding
       float: left

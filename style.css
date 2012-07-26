@@ -72,8 +72,12 @@ a:hover {
   position: absolute;
   top: 400px;
   right: 50px;
-  color: #d5d5d5;
+  z-index: 10;
   text-shadow: -1px -1px 3px #292929, 1px 1px 3px #cecece;
+}
+#Description #header #news,
+#Description #header #news a {
+  color: #d5d5d5;
 }
 #Description #header #news dt {
   font: 16px SketchRockwell;
@@ -100,11 +104,12 @@ a:hover {
 #Description #goal > div {
   position: absolute;
   left: 190px;
-  top: 100px;
+  top: 80px;
   width: 670px;
 }
 #Description .boxes {
   width: 922px;
+  height: 281px;
   margin: 50px auto;
 }
 #Description .boxes > div {
