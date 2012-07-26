@@ -1,107 +1,118 @@
 <!doctype html>
 
-<div id=desc-header>
+<div id=header>
 	<div id=header-image>
-		<img src="projects/project1454/header3.jpg" title="lol, Mousehover" alt="">
-		<a id=header-link href="https://dl.dropbox.com/u/7324949/Infinity/Enemy%20Wallpaper/1920x1080.jpg"><img src="projects/project1454/button.png" alt="Make steam, not love"></a>
+		<a href="#Description"><img src="images/header.png" title="lol, Mousehover" alt=""></a>
+		<img class=gauge src="images/gauge.png" alt="">
 	</div>
 
-	<div id=buttons>
-		<a href="http://clonkforge.net/dforum.php?pr=1454"><img src="projects/project1454/forum.png" alt="Auf zum Forum!"></a>
-		<a href="http://lluchs.github.com/Clinfinity/Documentation/index/General.html"><img src="projects/project1454/doku.png" alt="Entwickler-Dokumentation"></a>
-		<a href="http://ccan.de/cgi-bin/ccan/ccan-view.pl?a=view&i=6068"><img src="projects/project1454/download.png" alt="Download Todesrennen.c4s"></a>
-		<a href="#"><img src="projects/project1454/trailer.png" alt="Fehler und Wünsche"></a>
-		<a href="#"><img src="projects/project1454/bugtracker.png" alt="Fehler und Wünsche"></a>
+	<nav id=buttons>
+		<a href="/dforum.php?pr=1454">Forum</a>
+		<a href="http://lluchs.github.com/Clinfinity/Documentation/index/General.html">Doku</a>
+		<a href="#detail">Detailinfos</a>
+		<a href=/bugtrack.php?prj=1454">Bugs</a>
+	</nav>
+
+	<div id=news>
+		<dl>
+			<dt>19.07.2012
+			<dd>Giftime
+			<dt>17.07.2012
+			<dd>Wallpapertime!
+			<dt>08.07.2012
+			<dd>Trailer Leak
+		</dl>
 	</div>
 </div>
 
-<div id=goal>
-	<h2>Das Ziel:</h2>
+<div id=detail>
+	<section id=main class=content>
+		<div id=goal>
+			<h2><img src="images/h_intro.png" alt="Viva la (R)evolution!"></h2>
 
-	<p>Clonk ist mittlerweile ausgereift in vielen Dingen. Außer in Basenmelees. Das wollen wir ändern! Unser Marschallplan:</p>
-	<ul>
-		<li> Clonks müssen Agiler sein (bereits umgesetzt)</li>
-		<li> Produktionsketten und Logistik muss vereinfacht werden</li>
-		<li>Waffen dürfen effizient aber nicht OP sein</li>
-		<li>Siedlungen müssen dynamisch sein und sich den Gegebenheiten anpassen können</li>
-		<li>Ästhetik, Ästhetik, Ästhetik!
-	</ul>
+			<div>
+				<p>Clonk ist mittlerweile ausgereift in vielen Dingen. Außer in Basenmelees. Das wollen wir ändern! Unser Marschallplan:</p>
+				<ul>
+					<li>Clonks müssen agiler sein (bereits umgesetzt)</li>
+					<li>Produktionsketten und Logistik muss vereinfacht werden</li>
+					<li>Waffen dürfen effizient aber nicht OP sein</li>
+					<li>Siedlungen müssen dynamisch sein und sich den Gegebenheiten anpassen können</li>
+					<li>Ästhetik, Ästhetik, Ästhetik!
+				</ul>
+			</div>
+		</div>
+
+		<div class=boxes>
+			<div>
+				<h3>Installer</h3>
+				<em>Für Spieler</em>
+				<p>Dies ist der Installer. Du musst ihn lediglich in dein Clonkverzeichnis kopieren und ausführen. Der Rest geschieht automagisch.</p>
+
+				<a href="https://github.com/lluchs/Clinfinity/downloads">Clinstaller.exe</a>
+			</div>
+
+			<div>
+				<h3>Repository</h3>
+				<em>Für Entwickler</em>
+				<p>Wer direkt in das Repos schauen möchte ist eingeladen, unsere Github Seite aufzusuchen.</p>
+
+				<a href="https://github.com/lluchs/Clinfinity">GitHub.com</a>
+			</div>
+		</div>
+
+		<h2><img src="images/h_pics.png" alt=Bilder></h2>
+		<a href="projects/project1454/platform.jpg" target="_blank">
+			<img src="projects/project1454/platform_thumb.jpg" width="200" height="150" alt="verschiebbare Plattformen!">
+		</a>
+
+		<a href="projects/project1454/factory.jpg" target="_blank">
+			<img src="projects/project1454/factory_thumb.jpg" width="200" height="150" alt="Produktion!">
+		</a>
+
+		<a href="projects/project1454/frigate.jpg" target="_blank">
+			<img src="projects/project1454/frigate_thumb.jpg" width="200" height="150" alt="hier wird King of the Hill gespielt!">
+		</a>
+	</section>
+
+	<section id=detail-section class=content>
+		<h2><img src="images/h_concept.png" alt=Konzept></h2>
+
+		<div class=newsfloater></div>
+
+		<img src="images/concept_1.png" alt="" style="float: left">
+
+		<p>Siedelmelees sind so ziemlich das schwierigste überhaupt. Aber wir haben einen Plan, von dem wir glauben, dass er funktioniert:
+
+		<h3>Agilität</h3>
+		<p><em>Clonks sind jetzt agiler als je zuvor!</em> Durch den Doppelsprung und den Fluganzug kann der Clonk so ziemlich alle Stellen erreichen. Dynamische Aufwinde in allen Szenarien bieten immer neue Flugmuster, kein Angriff ist wie der vorherige!
+
+		<p>Der Materialnachschub muss schnell gehen, daher hat der Spieler ein HUD, das sein Inventar ersetzt. Aufgesammelte Materialien wandern direkt dort hin. So kann man eine Ladung Steine ohne fragwürdige Transportvehikel schnell nutzbar machen. Holz gewinnt man direkt aus dem Schlagen von Bäumen, damit die sich nicht mehr auf dem Weg zu einem Sägewerk verheddern.
+
+
+		<div class=clear style="height: 40px"></div>
+		<img src="images/concept_2.png" alt="" style="float: right; margin-top: 40px; margin-left: 40px">
+
+		<h3>Dynamische Siedlungen</h3>
+
+		<p><em>Eine Schlacht findet selten immer nur an einem Ort statt.</em> Deshalb muss der Spieler seine Siedlung schnell den Gegebenheiten anpassen können. Dafür hat er Plattformen, die er beliebig vertikal und eingeschränkt horizontal verschieben kann.
+
+		<p>Die Plattformen verbrauchen allerdings Dampf, den der Spieler möglichst in rauhen Mengen produzieren sollte. Ist kein Dampf mehr da, stürzen Teile oder gar die ganze Siedlung ab und der Spieler hat mit hoher Wahrscheinlichkeit verloren.
+
+
+		<div class=clear style="height: 20px"></div>
+		<img src="images/blueprint.png" alt="" style="float: left; margin-right: 40px">
+
+		<h3 style="margin-top: 0">Waffenarsenal</h3>
+
+		<p><em>Wir haben für jede Situation die richtige Waffe gebaut!</em><br>
+		Zielsichere Muskete, bereinigender Dampfgranatwerfer, hinterhältiges Kampf Jo-Jo™. Wem das alles Kleinkram ist, der darf sich hinter ein Geschütz oder ein Katapult setzen!
+
+		<p>Die ultimativste Waffe bildet natürlich unsere Auswahl an Hüten!<br>
+		Mehr dazu irgendwann.
+
+		<div class=clear></div>
+	</section>
 </div>
-
-<br>
-
-<div id=current-work>
-	<h2>Woran wir gerade arbeiten:</h2>
-	<img style="float:left; padding-right: 0px;" src="projects/project1454/zweistein.jpg" title="Good News, everyone!" alt="Professor Zweistein">
-	<ul>
-		<li>Beta-Trailer</li>
-		<li>Kampf Jo-Jo</li>
-		<li>Dampfgranatwerfer</li>
-		<li>Beta-Version</li>
-		<li>Hüte</li>
-		<li>Hüte</li>
-		<li>verrücktes, supergeheimes Zeug!</li>
-	</ul>
-</div>
-
-<div id=weapons>
-	<h2>Waffen</h2>
-	<img src="projects/project1454/musket.png" title="" alt="Muskete">
-	<p><b>Muskete:</b> Schießt schmerzhafte Projektile über weite Distanzen. Eignet
-		sich hervorragend um fliegende Clonks vom Himmel zu holen.
-		Zielt halbautomatisch.</p>
-	<p><b>Status:</b> Fertig</p>
-
-	<br><br>
-
-	<img src="projects/project1454/yo-yo.png" title="" alt="Yo-Yo">
-	<p><b>Kampf Jo-Jo:</b> Nebst prima Freizeitbeschäftigung eignet sich dieses gefährliche
-		Jo-Jo aus Metall gut um gegnerische Clonks ordentlich eins auf
-		die Nuss zu geben.</p>
-	<p><b>Status:</b> Fast fertig</p>
-
-	<br><br>
-
-	<img src="projects/project1454/grenade.png" title="" alt="Granatenwerfer">
-	<p><b>Dampfgranatwerfer:</b> Schießt kleine Dampfbomben, die beim Aufschlag alles wegschleudern,
-		was sich in der Nähe befindet. Egal ob Freund oder Feind.</p>
-	<p><b>Status:</b> Todo</p>
-</div>
-
-<br><br>
-
-<h2>Hutdatenbank</h2>
-<img src="projects/project1454/huete5.png" title="Hutdatenbank für den Clonk von Welt" alt="Hüte!">
-
-<h2>Screenz:</h2>
-<a href="projects/project1454/platform.jpg" target="_blank">
-	<img src="projects/project1454/platform_thumb.jpg" width="200" height="150" alt="verschiebbare Plattformen!">
-</a>
-
-<a href="projects/project1454/factory.jpg" target="_blank">
-	<img src="projects/project1454/factory_thumb.jpg" width="200" height="150" alt="Produktion!">
-</a>
-
-<a href="projects/project1454/frigate.jpg" target="_blank">
-	<img src="projects/project1454/frigate_thumb.jpg" width="200" height="150" alt="hier wird King of the Hill gespielt!">
-</a>
-<br>
-
-<h2>Mitmachen!</h2>
-<p>Es gibt mehrere Möglichkeiten etwas zum Projekt beizutragen:</p>
-<img style="float:left; padding-right: 0px;" src="projects/project1454/git9.jpg" title="Gitstats!" alt=""></img>
-<ul>
-	<li>Ideen erfinden oder andere <b><a href="http://clonkforge.net/dforum.php?f=b&b=2&p=1&pr=1454">im Forum</a></b> kommentieren
-	</li>
-
-	<li>Wir versuchen unsere Testspiele stets auf dem Masterserver stattfinden zu lassen. Dort kannst du beitreten und mitmachen. Am einfachsten ist es entweder <b><a href="http://clonkforge.net/dforum.php?f=b&b=0&p=1&pr=1454">im  Newsbrett</a></b> nach neuen Ankündigungen Ausschau zu halten - oder noch besser: Der <b><a href="http://steamcommunity.com/groups/clonkletsplay">Clonk Letsplay Steamgruppe</a></b> beizutreten. 
-		Alle Mitglieder werden dort wenn ein Testspiel stattfindet via Nachricht und wenn gewünscht per Newssfeed informiert. Dort gibts auch einen Gruppenchat. Alle Testspiele finden per Voicechat statt, dazu könnt ihr unseren Channel "Let's Play" auf Caesars TeamSpeak3 Server <b>(Adresse: 78.46.116.30)</b> joinen.
-	</li>
-
-	<li>
-		Du bist Scripter und willst mitmachen? Ideal wenn du dich mit Git auskennst, da kannst du dir unser Repos klonen: <b>git://github.com/lluchs/Clinfinity.git</b>, dir alles anschauen und ggf. einen Pull Request durchführen. Unbedingt die <a href="https://github.com/lluchs/Clinfinity/wiki/C4Script-Style-Guideline">C4Script Style Guidelines beachten!</a>
-	</li>
-</ul>
 
 <!-- Script includes for local viewing -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>

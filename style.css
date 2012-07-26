@@ -1,118 +1,163 @@
+/* Redesign #1 */
+#projectHeader,
+#infobox {
+  display: none;
+}
+body {
+  background: url("images/bg.jpg") fixed;
+  min-width: 1154px;
+  overflow-x: hidden;
+}
 div#content {
-  width: 95%;
-  max-width: 1280px;
+  max-width: 1000000px;
 }
-
-div#Description {
-	position: relative;
+/* General Styling */
+@font-face {
+  font-family: SketchRockwell;
+  src: url("images/SketchRockwell-Bold.ttf");
 }
-
-div#floater {
-  position:relative; 
-  top:-138px; 
-  left:170px; 
+ul {
+  overflow: hidden;
 }
-
-ul { overflow: hidden; }
-
 *::-moz-selection {
-    background-color: #ade5ff;
+  background-color: #ade5ff;
 }
 *::selection {
-    background-color: #ade5ff;
+  background-color: #ade5ff;
 }
-
-a:link { 
-    color: #3a2c1e;
+a {
+  color: #2a2722;
 }
-
-a:hover { 
-  color: #7a5b3d; 
+a:hover {
+  color: #ca8c3d;
 }
-
 /* Content formatting */
-div#desc-header {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	text-align: center;
+#Description {
+  width: 1154px;
+  min-height: 850px;
+  margin: auto;
+  padding-bottom: 40px;
+  background-color: #c9bcb3;
+  border: 0;
+  position: relative;
+  -webkit-box-shadow: 0 0 10px 0px rgba(0,0,0,0.57);
+  box-shadow: 0 0 10px 0px rgba(0,0,0,0.57);
+  font-size: 16px;
+  line-height: 24px;
 }
-
-#header-image {
-	position: relative;
-	width: 1216px;
-	max-width: 100%;
-	margin-left: auto;
-	margin-right: auto;
+#Description #header {
+  height: 400px;
 }
-
-#header-image > img {
-	max-width: 100%;
+#Description #header #header-image {
+  position: absolute;
+  top: -26px;
+  left: -56px;
 }
-
-a#header-link {
-	position: absolute;
-	right: 3px;
-	top: 6px;
+#Description #header #header-image img.gauge {
+  position: absolute;
+  top: 20px;
+  left: 354px;
 }
-
-div#goal, div#infobox {
-	margin-top: 400px;
+#Description #header #buttons {
+  position: absolute;
+  top: 20px;
+  left: 430px;
+  font-family: SketchRockwell;
+  font-size: 32px;
+  word-spacing: 20px;
 }
-
-div#current-work {
-	float: right;
-	width: 500px;
+#Description #header #news {
+  width: 160px;
+  height: 220px;
+  position: absolute;
+  top: 400px;
+  right: 50px;
+  color: #d5d5d5;
+  text-shadow: -1px -1px 3px #292929, 1px 1px 3px #cecece;
 }
-
-div#weapons {
-	width: 580px;
+#Description #header #news dt {
+  font: 16px SketchRockwell;
+  margin-top: 20px;
 }
-
-div#weapons img {
-	float: left;
-	padding-right: 5px;
+#Description #header #news dd {
+  font: 16px Arial;
+  margin-left: 0;
 }
-
-/* Fix buttons for smaller screens */
-@media screen and (max-width: 1300px) {
-	div#buttons {
-		position: relative;
-	}
-
-	div#buttons img {
-		width: 100%;
-	}
-
-	div #buttons > a {
-		position: absolute;
-		width: 19.7%;
-	}
-
-	div#buttons > a:nth-child(1) {
-		left: 0;
-	}
-
-	div#buttons > a:nth-child(2) {
-		left: 20.1%;
-	}
-
-	div#buttons > a:nth-child(3) {
-		left: 40.2%;
-	}
-
-	div#buttons > a:nth-child(4) {
-		left: 60.3%;
-	}
-
-	div#buttons > a:nth-child(5) {
-		right: 0;
-	}
-
+#Description section.content {
+  padding: 0 40px;
 }
-
-/* Don't allow adding new buttons without fixing the CSS above first */
-div#buttons > a:nth-child(n+6) {
-	display: none;
+#Description section.content + section.content {
+  display: none;
+}
+#Description #goal {
+  position: relative;
+}
+#Description #goal > h2 > img {
+  position: relative;
+  left: -17px;
+  top: 0;
+}
+#Description #goal > div {
+  position: absolute;
+  left: 190px;
+  top: 100px;
+  width: 670px;
+}
+#Description .boxes {
+  width: 922px;
+  margin: 50px auto;
+}
+#Description .boxes > div {
+  position: relative;
+  background-image: url("images/dlbox.png");
+  margin: 20px;
+  display: inline-block;
+  width: 381px;
+  height: 261px;
+  text-align: left;
+  padding: 0 20px;
+  float: left;
+}
+#Description .boxes > div h3 {
+  font-size: 32px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+#Description .boxes > div em {
+  color: #877d74;
+  font-size: 18px;
+}
+#Description .boxes > div a {
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+  color: #ca8740;
+  font-size: 16px;
+  font-weight: bold;
+}
+#Description .boxes > div a::before {
+  content: url("images/dlcog.png");
+  position: relative;
+  top: 10px;
+  left: 0;
+}
+#Description div.newsfloater {
+  float: right;
+  width: 200px;
+  height: 220px;
+}
+#Description .clear {
+  clear: both;
+}
+#Description #detail:target #main {
+  display: none;
+}
+#Description #detail:target #detail-section {
+  display: block;
+}
+/* Fixes for smaller screens */
+@media screen and (max-width: 1154px) {
+  body {
+    overflow-x: scroll;
+  }
 }

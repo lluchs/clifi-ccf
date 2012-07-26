@@ -1,0 +1,185 @@
+@import "nib"
+
+/* Redesign #1 */
+
+main-width = 1154px
+
+// Hide unused elements
+#projectHeader, #infobox {
+  display: none
+}
+
+body {
+  background: url('images/bg.jpg') fixed
+  min-width: main-width
+  overflow-x: hidden
+}
+
+div#content {
+  max-width: 1000000px
+}
+
+/* General Styling */
+
+@font-face {
+  font-family: SketchRockwell
+  src: url('images/SketchRockwell-Bold.ttf')
+}
+
+ul { overflow: hidden; }
+
+*::-moz-selection {
+    background-color: #ade5ff;
+}
+*::selection {
+    background-color: #ade5ff;
+}
+
+a {
+    color: #2a2722
+}
+
+a:hover {
+  color: #ca8c3d
+}
+
+/* Content formatting */
+
+#Description {
+  width: main-width
+  min-height: 850px
+  margin: auto
+  padding-bottom: 40px
+  background-color: #C9BCB3
+  border: 0
+  position: relative
+
+  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.57)
+
+  font-size: 16px
+  line-height: 24px
+
+  #header {
+    height: 400px
+    #header-image {
+      absolute: top -26px left -56px
+      img.gauge {
+        absolute: top (@top + 6px) * -1 left 354px
+      }
+    }
+
+    #buttons {
+      absolute: top 20px left 430px
+      font-family: SketchRockwell
+      font-size: 32px
+      word-spacing: 20px
+    }
+
+    #news {
+      width: 160px
+      height: 220px
+      absolute: top 400px right 50px
+      color: #d5d5d5
+      text-shadow: -1px -1px 3px #292929, 1px 1px 3px #cecece
+
+      dt {
+        font: 16px SketchRockwell
+        margin-top: 20px
+      }
+
+      dd {
+        font: 16px Arial
+        margin-left: 0
+      }
+    }
+  }
+
+  section.content {
+    padding: 0 40px
+    // only first content paragraph visible
+    + section.content {
+      display: none
+    }
+  }
+
+  #goal {
+    position: relative
+    > h2 > img {
+      relative: left -17px top
+    }
+    > div {
+      absolute: left 190px top 100px
+      width: 670px
+    }
+  }
+
+  .boxes {
+    padding = 20px
+    margin = 20px
+    box-width = 421px
+    width: (box-width + margin * 2) * 2
+    margin: 50px auto
+    > div {
+      position: relative
+      background-image: url('images/dlbox.png')
+      margin: margin
+      display: inline-block
+      width: box-width - padding * 2
+      height: 261px
+      text-align: left
+      padding: 0 padding
+      float: left
+
+      h3 {
+        font-size: 32px
+        margin-top: 20px
+        margin-bottom: 10px
+      }
+
+      em {
+        color: #877D74
+        font-size: 18px
+      }
+
+      a {
+        absolute: bottom (padding + 30px) left padding
+        color: #CA8740
+        font-size: 16px
+        font-weight: bold
+        &::before {
+          content: url('images/dlcog.png')
+          relative: top 10px left
+        }
+      }
+
+    }
+  }
+
+  div.newsfloater {
+    float: right
+    width: 200px
+    height: 220px
+  }
+
+  .clear {
+    clear: both
+  }
+
+  #detail:target {
+    #main {
+      display: none
+    }
+
+    #detail-section {
+      display: block
+    }
+  }
+
+}
+
+/* Fixes for smaller screens */
+@media screen and (max-width: 1154px) {
+  body {
+    overflow-x: scroll
+  }
+}
