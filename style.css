@@ -167,9 +167,14 @@ a:hover {
 #VoteToggle,
 #Votes,
 #cmtbar,
+#CommentWindow,
 #comments {
   width: 1154px;
   margin: auto;
+}
+.newcomment {
+  border: 0;
+  margin-bottom: 1em !important;
 }
 .comment {
   background: #e1e0de;
