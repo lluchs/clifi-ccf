@@ -32,6 +32,9 @@ a:hover {
   color: #ca8c3d;
 }
 /* Content formatting */
+#DescToggle a:not([href="#"]) {
+  display: none;
+}
 #Description {
   width: 1154px;
   min-height: 850px;
