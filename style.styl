@@ -43,7 +43,15 @@ a:hover {
   color: #ca8c3d
 }
 
+div.anchored {
+  border: 0
+}
+
 /* Content formatting */
+
+#wholepage {
+  margin-top: -50px
+}
 
 #DescToggle a:not([href="#"]) {
   display: none
@@ -82,7 +90,7 @@ a:hover {
     #news {
       width: 160px
       height: 220px
-      absolute: top 400px right 50px
+      absolute: top 415px right 47px
       z-index: 10
       &, a { color: #d5d5d5 }
       text-shadow: -1px -1px 3px #292929, 1px 1px 3px #cecece
@@ -126,6 +134,7 @@ a:hover {
     width: (box-width + margin * 2) * 2
     height: box-height + 20px
     margin: 50px auto
+    margin-top: 40px
     > div {
       position: relative
       background-image: url('images/dlbox.png')
@@ -139,7 +148,7 @@ a:hover {
 
       h3 {
         font-size: 32px
-        margin-top: 20px
+        margin-top: 30px
         margin-bottom: 10px
       }
 
@@ -149,7 +158,7 @@ a:hover {
       }
 
       a {
-        absolute: bottom (padding + 30px) left padding
+        absolute: bottom (padding + 15px) left padding
         color: #CA8740
         font-size: 16px
         font-weight: bold

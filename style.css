@@ -31,7 +31,13 @@ a {
 a:hover {
   color: #ca8c3d;
 }
+div.anchored {
+  border: 0;
+}
 /* Content formatting */
+#wholepage {
+  margin-top: -50px;
+}
 #DescToggle a:not([href="#"]) {
   display: none;
 }
@@ -73,8 +79,8 @@ a:hover {
   width: 160px;
   height: 220px;
   position: absolute;
-  top: 400px;
-  right: 50px;
+  top: 415px;
+  right: 47px;
   z-index: 10;
   text-shadow: -1px -1px 3px #292929, 1px 1px 3px #cecece;
 }
@@ -114,6 +120,7 @@ a:hover {
   width: 922px;
   height: 281px;
   margin: 50px auto;
+  margin-top: 40px;
 }
 #Description .boxes > div {
   position: relative;
@@ -128,7 +135,7 @@ a:hover {
 }
 #Description .boxes > div h3 {
   font-size: 32px;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-bottom: 10px;
 }
 #Description .boxes > div em {
@@ -137,7 +144,7 @@ a:hover {
 }
 #Description .boxes > div a {
   position: absolute;
-  bottom: 50px;
+  bottom: 35px;
   left: 20px;
   color: #ca8740;
   font-size: 16px;
