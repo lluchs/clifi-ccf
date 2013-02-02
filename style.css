@@ -170,6 +170,11 @@ div.anchored {
 #Description #detail:target #detail-section {
   display: block;
 }
+#Description .video {
+  position: absolute;
+  left: 491px;
+  top: 1131px;
+}
 /* Votes and comments */
 #VoteToggle,
 #Votes,
